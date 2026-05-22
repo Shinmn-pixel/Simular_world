@@ -1,0 +1,123 @@
+{
+  "locations": [
+    {
+      "name": "家中",
+      "location_type": "residence",
+      "sub_locations": ["卧室", "客厅", "厨房", "卫生间", "阳台"],
+      "npc_pool": ["家人"],
+      "description": "你的温馨住所"
+    },
+    {
+      "name": "卧室",
+      "parent": "家中",
+      "location_type": "private_room",
+      "objects": ["床", "衣柜", "书桌", "镜子", "梳妆台"],
+      "actions": ["睡觉", "换衣服", "看书", "照镜子", "打发时间", "休息"]
+    },
+    {
+      "name": "客厅",
+      "parent": "家中",
+      "location_type": "common_room",
+      "objects": ["沙发", "电视", "茶几", "空调"],
+      "actions": ["看电视", "休息", "会客", "打发时间"]
+    },
+    {
+      "name": "厨房",
+      "parent": "家中",
+      "location_type": "utility",
+      "objects": ["冰箱", "灶台", "餐桌", "水槽", "微波炉"],
+      "actions": ["做饭", "吃饭", "喝水", "拿零食", "洗碗", "打扫厨房"]
+    },
+    {
+      "name": "卫生间",
+      "parent": "家中",
+      "location_type": "utility",
+      "objects": ["马桶", "淋浴", "洗手台", "洗衣机", "镜子"],
+      "actions": ["上厕所", "洗澡", "刷牙洗脸", "换卫生巾", "洗衣服", "照镜子"]
+    },
+    {
+      "name": "阳台",
+      "parent": "家中",
+      "location_type": "utility",
+      "objects": ["晾衣架", "洗衣机", "椅子"],
+      "actions": ["晾衣服", "发呆", "晒太阳", "抽烟"]
+    },
+    {
+      "name": "大学校园",
+      "location_type": "public",
+      "sub_locations": ["教室", "图书馆", "食堂", "操场", "宿舍"],
+      "npc_pool": ["同学", "老师"],
+      "description": "你就读的大学校园"
+    },
+    {
+      "name": "教室",
+      "parent": "大学校园",
+      "location_type": "room",
+      "objects": ["课桌", "黑板", "投影仪"],
+      "actions": ["上课", "自习", "和同学聊天"]
+    },
+    {
+      "name": "图书馆",
+      "parent": "大学校园",
+      "location_type": "room",
+      "objects": ["书架", "阅览桌", "电脑", "打印机"],
+      "actions": ["看书", "自习", "借书", "查资料"]
+    },
+    {
+      "name": "食堂",
+      "parent": "大学校园",
+      "location_type": "public",
+      "objects": ["打饭窗口", "餐桌", "饮料机"],
+      "actions": ["吃饭", "和朋友聚餐", "休息"]
+    },
+    {
+      "name": "操场",
+      "parent": "大学校园",
+      "location_type": "public",
+      "objects": ["跑道", "篮球场", "看台"],
+      "actions": ["跑步", "散步", "打球", "看比赛"]
+    },
+    {
+      "name": "宿舍",
+      "parent": "大学校园",
+      "location_type": "private_room",
+      "objects": ["床", "书桌", "衣柜", "镜子"],
+      "actions": ["睡觉", "休息", "看书", "换衣服", "和室友聊天"]
+    },
+    {
+      "name": "商业街",
+      "location_type": "public",
+      "sub_locations": ["便利店", "服装店", "餐厅", "咖啡厅"],
+      "npc_pool": ["路人", "店员"],
+      "description": "繁华的商业街区"
+    },
+    {
+      "name": "便利店",
+      "parent": "商业街",
+      "location_type": "shop",
+      "objects": ["货架", "收银台", "冷柜", "热食柜"],
+      "actions": ["买零食", "买日用品", "买饮料", "买便当"]
+    },
+    {
+      "name": "服装店",
+      "parent": "商业街",
+      "location_type": "shop",
+      "objects": ["衣架", "试衣间", "镜子", "收银台"],
+      "actions": ["买衣服", "试衣服", "逛街"]
+    },
+    {
+      "name": "餐厅",
+      "parent": "商业街",
+      "location_type": "public",
+      "objects": ["餐桌", "菜单", "吧台"],
+      "actions": ["吃饭", "和朋友聚餐", "约会", "一个人吃饭"]
+    },
+    {
+      "name": "咖啡厅",
+      "parent": "商业街",
+      "location_type": "public",
+      "objects": ["沙发", "吧台", "咖啡机"],
+      "actions": ["喝咖啡", "看书", "约会", "和朋友聊天", "发呆"]
+    }
+  ]
+}

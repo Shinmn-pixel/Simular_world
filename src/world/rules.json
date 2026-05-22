@@ -1,0 +1,77 @@
+[
+  {
+    "trigger": "is_menstruating == True and energy < 50",
+    "effect": "触发痛经加重环境——体力下降，行动受阻，需要休息或药物缓解",
+    "priority": 15
+  },
+  {
+    "trigger": "menstrual_day == 1",
+    "effect": "触发月经开始事件——身体不适，需要关注卫生用品和休息",
+    "priority": 12
+  },
+  {
+    "trigger": "is_menstruating == True and menstrual_day <= 3",
+    "effect": "经期前三天最不适期——腹痛和疲劳最为严重，应避免剧烈活动",
+    "priority": 10
+  },
+  {
+    "trigger": "hunger < 20",
+    "effect": "触发极度饥饿危机——必须尽快进食，否则有晕倒风险",
+    "priority": 18
+  },
+  {
+    "trigger": "hunger < 40 and hunger >= 20",
+    "effect": "触发中度饥饿事件——寻找食物成为当前优先事项",
+    "priority": 14
+  },
+  {
+    "trigger": "sleep_drive < 15",
+    "effect": "触发极度缺觉危机——随时可能昏倒，必须立即休息",
+    "priority": 19
+  },
+  {
+    "trigger": "sleep_drive < 35 and sleep_drive >= 15",
+    "effect": "触发中度疲劳事件——注意力下降，工作效率降低，容易出错",
+    "priority": 13
+  },
+  {
+    "trigger": "libido > 90",
+    "effect": "触发性冲动事件——身体焦躁，社交互动中加入吸引力暗示和冲动行为风险",
+    "priority": 10
+  },
+  {
+    "trigger": "libido > 75 and libido <= 90",
+    "effect": "性欲升高——叙事中增加身体躁动和心理暗示元素",
+    "priority": 7
+  },
+  {
+    "trigger": "health < 30",
+    "effect": "触发严重疾病事件——必须尽快就医，否则有生命危险",
+    "priority": 20
+  },
+  {
+    "trigger": "health < 50 and health >= 30",
+    "effect": "触发轻度疾病事件——身体不适，建议就医或自行调理",
+    "priority": 16
+  },
+  {
+    "trigger": "mood < 20",
+    "effect": "触发抑郁事件——情绪极度低落，可能导致社交退缩和行动力丧失",
+    "priority": 17
+  },
+  {
+    "trigger": "cycle_day >= 22 and cycle_day <= 28",
+    "effect": "经前综合征期——情绪波动、乳房胀痛、易怒或易哭",
+    "priority": 8
+  },
+  {
+    "trigger": "day % 7 == 0",
+    "effect": "周末来临——工作暂停，自由时间增加，社交机会增多",
+    "priority": 5
+  },
+  {
+    "trigger": "day % 30 == 0",
+    "effect": "月末——需要支付房租和各种账单",
+    "priority": 6
+  }
+]
